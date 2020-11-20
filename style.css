@@ -52,10 +52,8 @@ p
 /*****Header*****/
 .header
 {
-    max-width: 1440px;
     display: flex;
     justify-content: space-between;
-    margin:auto;
 }
 .h1
 {
@@ -102,7 +100,6 @@ li{
 {
     font-family: 'raleway', sans-serif;
     margin: auto;
-    max-width: 1440px;
 }
 .headersubtitles
 {
@@ -236,14 +233,13 @@ li{
 {
     display:flex;
     align-content: center;
-    max-width: 1440px;
     margin:auto;
 }
 .hosting
 {
     display:flex;
     flex-wrap: wrap;
-    max-width: 1000px;
+    max-width: 70%;
     margin: auto;
     border-radius: 30px;
     background-color: #F2F2F2;
@@ -295,7 +291,7 @@ li{
 /*****Pupolarity*****/
 .Popularity
 {
-    max-width: 400px;
+    max-width: 25%;
     padding-left: 30px;
     padding-right: 30px;
     background-color: #F2F2F2;
@@ -329,7 +325,7 @@ li{
     background-color: white;
     border-radius: 35px;  
     box-shadow: 0 0 16px #0000002e;   
-    margin-bottom: 3.2em;
+    margin-bottom: 3em;
 }
 .popimg
 {
@@ -357,7 +353,7 @@ li{
 /*****Activity*****/
 .activity
 {
-    max-width: 1440px;
+    width: 100%;
     margin:auto;
 }
 .activitytitlecontent
@@ -369,7 +365,6 @@ li{
 }
 .activitycontainer
 {
-    max-width: 1440px;
     height: 500px;
     display: flex;
     justify-content: space-between;
@@ -446,7 +441,6 @@ footer
     display: flex;
     justify-content: space-between;
     background-color: #F2F2F2;
-    max-width: 1440px;
     margin:auto;
     height: 100%;
     margin-top: 50px;
@@ -639,12 +633,13 @@ footer
     }
     .popcontainer
     {
+        width: 100%;
         flex-direction: column;
         align-content: center;
     }
     .popcards
     {
-
+        width:100%;
         margin-bottom: 30px;
     }
     .hosting
