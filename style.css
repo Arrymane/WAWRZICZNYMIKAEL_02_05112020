@@ -421,7 +421,7 @@ footer
 {
     display:flex;
     flex-direction: column;
-    padding: 3em 16em 3em 0;
+    padding: 3em 16em 3em 1em;
 }
 .footertext
 {
