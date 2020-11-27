@@ -443,7 +443,7 @@ footer
     padding: 1em 0 0 0;
 }
 /*****MEDIA*****/
-@media screen and (max-width: 1024px)
+@media screen and (max-width: 1280px)
 {
     header
     {
@@ -506,6 +506,41 @@ footer
         padding: 2em 10em 0 0;
     }
 }
+@media screen and (max-width: 768px)
+{
+    .Headersearch
+    {
+        margin-left: 17%;
+    }
+    .filtres
+    {
+        flex-wrap: wrap;
+    }
+    .Searchfiltrescase
+    {
+        margin-bottom: 1em;
+    }
+    .Popularity, .popcontainer
+    {
+        flex-direction: column;
+        height:750px;
+        border-radius: 0;
+        display: inline;
+    }
+    .popcards
+    {
+        width: 450px;
+        margin: 0 0 2em 25%;
+    }
+    .hostingcontainer
+    {
+        margin-top: 2em;
+    }
+    .Footerlink
+    {
+        padding: 2em;
+    }
+}
 @media screen and (max-width: 601px)
 {
     .headerlogo
@@ -516,6 +551,7 @@ footer
     .header
     {
         margin: 0;
+        display: block;
     }
     .signup
     {
@@ -524,11 +560,11 @@ footer
         right:1em;
         height:auto;
     }
-    nav
+    .nav
     {
         width:100%;
-        margin: 0;
-        margin-bottom: 2em;
+        margin: 0 0 2em 0;
+        padding: 0;
         height:auto;
     }
     .navbar
@@ -536,11 +572,11 @@ footer
         width: 100%;
         text-align: center;
     }
-    .navlink, .nav
+    .navlink
     {
         width: 100%;
         border-bottom: 2px solid #f2f2f2;
-        padding: 2em 0 1em 0;
+        padding: 1em 0 1em 0;
         border-top: 0;
         margin:0;
         height:auto;
@@ -550,7 +586,7 @@ footer
         width: 100%;
         color: #0065FC;
         border-bottom: 3px solid #0065FC;
-        padding: 2em 0 1em 0;
+        padding: 1em 0 1em 0;
         border-top: 0;
         margin:0;
         height:auto;
@@ -560,12 +596,12 @@ footer
         width: 100%;
         color: #0065FC;
         border-bottom: 3px solid #0065FC;
-        padding-top: 2em;
         border-top: 0;
     }
     .headersearchtitle, .headersubtitles, .infotext
     {
         font-size: 1em;
+        margin: 1em 0 1em 0;
     }
     .filtres
     {
@@ -573,10 +609,12 @@ footer
         justify-content: space-between;
         margin: 2em 0 1em 0;
         font-size: 1em;
+        font-weight: bold;
     }
     .filtertitle 
     {
         width: 100%;
+        font-size: 1.4em;
         margin: 0 0 1em 0;
     }
     .infoicon
@@ -593,6 +631,11 @@ footer
     .Headersearch
     {
         width:100%;
+        margin: 0;
+    }
+    .searchcase
+    {
+        width: 250px;
     }
     .submitsearch
     {
@@ -601,14 +644,15 @@ footer
     .searchbutton
     {
         background-color: #0065FC;
-        font-size: 1rem;
+        font-size: 1em;
         border-radius: 1em;
         padding: 0 1em 0 1em;
         margin-left: -1.1em;
+        width: 3.5em;
     }
     .loupe
     {
-        display:flex;
+        display: block;
     }
     .main{
         margin: 0;
