@@ -3,14 +3,14 @@
 
 ## PROJET 2 RESERVIA OPENCLASSROOM
 
-Deuxième étape du parcours de la formation web developper consistant à mission d'intégration d'une maquette d'un site de location de vacances nommé Reservia. (voir image ci-dessous)
+Deuxième étape du parcours de la formation web developper consistant à une mission d'intégration d'une maquette pour un site de location nommé Reservia. (voir image ci-dessous)
 
 ![alt text](https://github.com/Arrymane/WAWRZICZNYMIKAEL_02_05112020/blob/main/Images/Maquette/Desktop.png)
 
 ### Éléments fournis par l'entreprise:
 
-* maquette pour les résolutions ordinateur et téléphone nous est donné.
-* les images présentes sur le site sont aussi livrés en format sm, md, l & xl.
+* maquette pour les résolutions d'ordinateurs et téléphones nous est donné.
+* les images présentes sur le site sont aussi livrés au format sm, md, l & xl.
 * Les icones provenant de Font Awesome
 * Les couleurs: bleu #0065FC - bleu clair #DEEBFF - gris #F2F2F2
 * La police: "Raleway"
