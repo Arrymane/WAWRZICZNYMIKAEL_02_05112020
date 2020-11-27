@@ -33,6 +33,11 @@ a
     color: inherit;
     text-decoration: none;
 }
+p
+{
+    margin:0;
+    padding: 8px 0 8px 0;
+}
 li
 {
     padding: 0 0 1em 0;
@@ -66,7 +71,7 @@ li
 {
     display: flex;
     color: black;
-    margin: 0 0 3em 0;
+    margin: 1em 0 3em 0;
 }
 .navbar
 {
@@ -77,25 +82,29 @@ li
 {
     margin-right: 2em;
     padding: 2em 0 0 0;
+    height: 100%;
     
 }
 .navlink:hover
 {
     color: #0065FC;
     border-top: 3px solid #0065FC;
+    box-sizing: content-box;
 }
 .navlinkactive
 {
     color: #0065FC;
     border-top: 3px solid #0065FC;
     margin: 0 5em 0 0;
-    padding: 2em 0 0 0;
+    padding: 1.8em 0 0 0;
+    height: 100%;
 }
 .signup
 {
     padding: 2em 0 0 3em;
     color: #0065FC;
     font-weight: bold;
+    height: 100%;
 }
 .headersubtitles, .headersearchtitle
 {
@@ -128,10 +137,15 @@ li
 }
 .searchcasetxt
 {
-    color: black;
+    width: 280px;
     font-size: 1.1em;
     padding-left: 1.5em;
     border: 0;
+}
+.searchcasetxt::placeholder
+{
+    color: black;
+    font-weight: bold;
 }
 .searchbutton
 {
@@ -204,7 +218,7 @@ li
     align-items: center;
     border-radius: 100%;
     justify-content: center;
-    margin: 1em;
+    margin: 2em 1em 2em 1em;
     padding:2px;  
 }
 .infotext
@@ -218,12 +232,11 @@ li
     align-content: center;
     margin: 0 1em 0 1em;
 }
-.hosting
+#hosting
 {
     display:flex;
     flex-wrap: wrap;
-    max-width: 70%;
-    border-radius:2em;
+    border-radius:1.5em;
     background-color: #F2F2F2;
     padding: 0 0 2em 0;
 }
@@ -233,13 +246,12 @@ li
 }
 .hostingsubtitle
 {
-    padding: 1em 0 0 2em;
+    padding: 1em 0 0 1.5em;
     font-size: 1.2em;
 }
 .hostingcontainer
 {
     width: 100%;
-    margin: 0;
     display: flex;
     flex-flow: row wrap; 
     justify-content: center;
@@ -247,27 +259,31 @@ li
 .hostingcards
 {
     background: white;
-    border-radius: 35px;
+    border-radius: 1.5em;
     height: 240px;
-    width: 270px;
+    width: 275px;
     margin: 1em;
     box-shadow: 0 0 16px #0000002e;
     padding: 3px;
 }
 .hostingimg
 {
-    width: 270px;
-    height: 120px;
-    border-radius: 30px 30px 0 0;
+    width: 275px;
+    height: 150px;
+    border-radius: 1.5em 1.5em 0 0;
     border: 3px solid white;
     box-sizing: border-box;
     object-fit: cover;
+}
+.hostingcardtext
+{
+    margin-left: 5px;
 }
 /*****Pupolarity*****/
 .Popularity
 {
     background-color: #F2F2F2;
-    border-radius: 30px;
+    border-radius: 1.5em;
     margin-left: 3em;
     
 }
@@ -275,13 +291,13 @@ li
 {
     display: flex;
     justify-content: space-between;
-    padding: 2.5em 1em 1.2em 1em;
+    padding: 2.3em 1em 1.5em 1em;
 }
 .popcontainer
 {
     display: flex;
     flex-direction: column;
-    padding: 0 1em 0 1em;
+    padding: 0 1.5em 0 1.5em;
     border-radius: 35px;
     background-color: #F2F2F2;
 }
@@ -292,15 +308,15 @@ li
     width: 370px;
     height: 180px;
     background-color: white;
-    border-radius: 2em;  
+    border-radius: 1.5em;  
     box-shadow: 0 0 16px #0000002e;   
-    margin-bottom: 3em;
+    margin-bottom: 2.5em;
 }
 .popimg
 {
     width: 160px;
     height: 170px;
-    border-radius: 30px 0 0px 30px;;
+    border-radius: 1.5em 0 0px 1.5em;;
     padding-left: 5px;
     border: 3px solid white;
     box-sizing: border-box;
@@ -314,11 +330,12 @@ li
 }
 .popwhitespace
 {
-    height: 40px;
+    height: 3.5em;
     background-color: white;
 }
 /*****Activity*****/
-.activity
+
+#activity
 {
     height: 600px;
     margin: 0 1em 0 1em;
@@ -351,7 +368,7 @@ li
 .activitycard60
 {
     width: 300px;
-    max-height: 50%;
+    height: 280px;
     margin-bottom: 2em;
     border-radius: 2em;
     background-color: white;
@@ -361,7 +378,7 @@ li
 .activitycard40
 {
     width: 300px;
-    max-height: 40%;
+    height: 35%;
     border-radius: 2em;
     background-color: white;
     box-shadow: 0 0 16px #0000002e; 
@@ -383,21 +400,21 @@ li
 .activityimg60
 {   
     width: 100%;
-    max-height: 70%;
+    max-height: 80%;
+    border-radius: 2em 2em 0 0;
+    object-fit: cover;
+}
+.activityimg50
+{
+    width: 100%;
+    max-height: 75%;
     border-radius: 2em 2em 0 0;
     object-fit: cover;
 }
 .activityimg40
 {
     width: 100%;
-    height: 70%;
-    border-radius: 2em 2em 0 0;
-    object-fit: cover;  
-}
-.activityimg50
-{
-    width: 100%;
-    max-height: 70%;
+    max-height: 65%;
     border-radius: 2em 2em 0 0;
     object-fit: cover;
 }
@@ -426,35 +443,19 @@ footer
     padding: 1em 0 0 0;
 }
 /*****MEDIA*****/
-@media screen and (max-width: 1260px)
+@media screen and (max-width: 1024px)
 {
     header
     {
-        max-width: 100%;
-        flex-direction: column;
-        align-items: flex-start;
-        align-content: center;
-    }
-    .headerlogo
-    {
-        height: 50px;
-    }
-    .headersignup
-    {
-        position: absolute;
-        top:1em;
-        right:0;
-    }
-    .filtres
-    {
-        flex-wrap: wrap;
+        margin: 0;
     }
     .main
     {
         width: 100%;
         flex-direction: column-reverse;
+        margin: 0;
     }
-    .hosting
+    #hosting
     {
         width: 100%;
         background-color: white;
@@ -467,106 +468,111 @@ footer
     }
     .Popularity
     {
-        max-width: 100%;
+        width: 100%;
         border-radius: 0;
+        margin: 0;
     }
     .popcontainer
     {
         flex-direction: row;
-        height:auto;
-        width: 100%;
-        margin:0;
         padding: 0;
+        height: 250px;
     }
     .popcards
     {
+        width: auto;
         padding:0;
-        margin:0;
+        margin:0 1em 0 1em;
     }
-    .activity
+    .popwhitespace
     {
-        width: 100%;
-        flex-direction: column;
-        align-content: center;
-        margin: auto;
+        height:0;
+    }
+    #activity
+    {
+        height: auto;
     }
     .activitycontainer
     {
-        align-content: center;
         flex-wrap: wrap;
-        width:100%;
-        height: 100%;
-    }
-    .footer
-    {
-        width: 100%;
-        flex-direction: column;
         justify-content: center;
-        align-content: center;
+    }
+    .activitycardxl
+    {
+        margin: 0 8em 2em 0 ;
+    }
+    .Footerlink
+    {
+        padding: 2em 10em 0 0;
     }
 }
-@media screen and (max-width: 768px)
+@media screen and (max-width: 601px)
 {
     .headerlogo
     {
         margin: 0 0 0 1em;
-        padding:0;
+        padding:2em 0 0 0;
     }
     .header
     {
         margin: 0;
-        align-content: center;
     }
     .signup
     {
         position: absolute;
-        top: 0;
+        top: 1em;
         right:1em;
+        height:auto;
     }
     nav
     {
-        justify-content: center;
         width:100%;
-        border-bottom: 2px solid #F2F2F2;
         margin: 0;
         margin-bottom: 2em;
+        height:auto;
     }
     .navbar
     {
         width: 100%;
-        justify-content: center;
         text-align: center;
     }
-    .navlink
+    .navlink, .nav
     {
         width: 100%;
         border-bottom: 2px solid #f2f2f2;
         padding: 2em 0 1em 0;
         border-top: 0;
         margin:0;
+        height:auto;
     }
     .navlinkactive
     {
         width: 100%;
         color: #0065FC;
-        border-bottom: 4px solid #0065FC;
+        border-bottom: 3px solid #0065FC;
         padding: 2em 0 1em 0;
         border-top: 0;
         margin:0;
+        height:auto;
     }
     .navlink:hover
     {
         width: 100%;
         color: #0065FC;
-        border-bottom: 4px solid #0065FC;
+        border-bottom: 3px solid #0065FC;
         padding-top: 2em;
         border-top: 0;
+    }
+    .headersearchtitle, .headersubtitles, .infotext
+    {
+        font-size: 1em;
     }
     .filtres
     {
         flex-direction: row;
         justify-content: space-between;
         margin: 2em 0 1em 0;
+        font-size: 1em;
     }
     .filtertitle 
     {
@@ -594,11 +600,11 @@ footer
     }
     .searchbutton
     {
-    background-color: #0065FC;
-    font-size: 1rem;
-    border-radius: 1em;
-    padding: 0 1em 0 1em;
-    margin-left: -1.1em;
+        background-color: #0065FC;
+        font-size: 1rem;
+        border-radius: 1em;
+        padding: 0 1em 0 1em;
+        margin-left: -1.1em;
     }
     .loupe
     {
@@ -614,10 +620,6 @@ footer
         margin:0;
         padding:0;
     }
-    .poptitle
-    {
-        margin-left: 35px;
-    }
     .popcontainer
     {
         flex-direction: column;
@@ -625,59 +627,53 @@ footer
     }
     .popcards
     {
-        width:100%;
-        margin: 0 0 2em 0;
+        width:340px;
+        margin: 0 1em 2em 1em;
     }
-    .hosting
+    .popwhitespace
     {
-    width: 100%;
+        height: 2em;
     }
-    .hostingcontainer
+    .hostingtitle
     {
-        width: 100%;
-        height:100%;
+        padding-left: 1em;
     }
-    .hostingcards
+    .hostingcards,  .hostingimg
     {
-        width: 100%;
-        margin: 0;
+        width: 340px;
     }
-    .hostingimg
+    #activity
     {
-        width:100%;
-    }
-    .activity
-    {
-        position: relative;
-        width: 100%;
         height: 100%;
+        margin: 0;
     }
     .activitytitlecontent
     {
-        margin-left: 20px;
+        margin: 0 0 0 1em;
     }
-    .activityimg
+    .activitycard
     {
-        width:340px;
-        height: 240px;
+        height: 500px;
+        width: 340px;
+        margin: 1.5em 1em 1.5em 1em;
     }
-    .activitycontainer
+    .activitycardxl
     {
-    }
-    .activitycard1, .activitycard2, .activitycard3, .activitycard4
-    {
-       height: 240px;
+       height: 220px;
        width:340px;
-       margin-bottom: 4.5em;
-       background: white;
-       border-radius: 30px;
+       margin: 1.5em 1em 1.5em 1em;
+    }
+    .activitycard60, .activitycard50, .activitycard40
+    {
+        height: 220px;
+        width: 340px;
+        margin: 1em 0 1em 0;
     }
      .activityimg, .activityimg60, .activityimg50, .activityimg40
     {
-        height: 200px;
-        width: 100%;
-        border-radius: 30px 30px 0 0;
-        object-fit: cover;
+        height: 150px;
+        width: 340px;
+        margin: 0;
     }   
     footer
     {
@@ -687,5 +683,6 @@ footer
     .Footerlink
     {
         padding:0;
+        margin-left: 1em;
     }
 }
